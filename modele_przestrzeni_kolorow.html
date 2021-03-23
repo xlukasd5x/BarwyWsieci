@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="Stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Barwy w sieci</title>
+</head>
+<body>
+<div class="header">
+  <h1>Barwy w sieci</h1>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Strona główna</a>
+  <a href="znaczenia_kolorow.html">Znaczenia kolorów</a>
+  <a href="zasady_doboru_barw.html">Zasady doboru barw</a>
+  <a href="dostosowywanie_kolorow.html">Dostosowywanie kolorów</a>
+  <a href="znaczenie_kolorow_w_biznesie.html">Znaczenie kolorów w biznesie</a>
+  <a href="modele_przestrzeni_kolorow.html" class="active">Modele przestrzeni kolorów</a>
+  <a href="kalibracja_monitora.html">Kalibracja monitora</a>
+  <a href="test_wiedzy.html">Test wiedzy</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+ 
+<div class="content">
+  <div class="lewy">&nbsp </div>
+  <div class="glowny1">
+  <h1 class="naglowek1">Modele przestrzeni kolorów: RGB  i CMYK – podstawowe różnice</h1>
+  <p class="wstep1">Mówiąc o kolorach, warto wspomnieć o problematycznej kwestii wyboru przestrzeni kolorów. Przestrzenie kolorystyczne są sposobem zapisu kolorów w cyfrowym świecie. Przestrzeń barw oznacza zbiór wszystkich kolorów, które mogą zostać zapisane np. na zdjęciu. Przykładowo standardowy ośmiobitowy plik JPG może zapisać 16,0 miliona różnych kolorów.</p>
+  <p class="wstep1">W zależności od przeznaczenia (tego, czy kolory mają być wyświetlane na ekranach czy wydrukowane) używa się modeli kolorystycznych RGB lub CMYK.</p>
+  <h1 class="naglowek1">RGB</h1>
+  <p class="wstep3">Jest standardem używanym w opisywaniu kolorów na ekranach. RGB to skrót od trzech składowych kanałów – czerwonego (red), zielonego (green) i niebieskiego (blue). Każdy z nich może przybierać wartość od 0 do 255, czyli na każdy kolor przypada 256 tonów. Co ciekawe, model RGB najbardziej zbliżony jest do tego, w jaki sposób barwy odbierają ludzie (trzy rodzaje receptorów/czopków w ludzkim oku – każdy dostosowany do innego zakresu długości fal).</p>
+  <video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/8/81/SRGB_gamut_within_CIELUV_color_space_mesh.webm/SRGB_gamut_within_CIELUV_color_space_mesh.webm.360p.vp9.webm" width="35%" height="35%" controls>Video not supported</video>
+  <video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/7/7a/Visible_gamut_within_CIELUV_color_space_D65_whitepoint_mesh.webm/Visible_gamut_within_CIELUV_color_space_D65_whitepoint_mesh.webm.360p.vp9.webm" width="35%" height="35%" controls>Video not supported</video>
+  <p class="wstep3">Chcąc nadać konkretną barwę danemu elementowi na stronie internetowej (np. nagłówkom) można wybrać jeden z dwóch sposobów zapisu koloru: notację RGB (np. color: rgb(56,204,221);) lub formę szesnastkową, czyli heksadecymalną (np. #38CCDD). W notacji szesnastkowej za określenie wartości każdego kanału odpowiadają po dwa znaki, a więc w podanym przykładzie skład czerwieni to „38”, zieleni = „CC”, natomiast niebieskiego = „DD”. Ponieważ wartości zapisane są w systemie szesnastkowym (a nie jak to zwykle bywa dziesiętnym), za zero odpowiada para „00”, a za liczbę 255 para „FF”.</p>
+  <h1 class="naglowek1">CMYK</h1>
+  <p class="wstep3">CMYK
+Jest standardem w opisywaniu kolorów przez urządzenia drukujące. Skrót CMYK pochodzi od składowych kanałów – jasnoniebieski (cyan), fioletowo-czerwony (magenta), żółty (yellow) i czarny (oznaczony tu jako „K”). CMYK ma nieznacznie węższą przestrzeń kolorów niż RGB – ze względu na właściwości tuszy w druku nie mamy możliwości uzyskania tak szerokiej skali kolorów, co może być zrekompensowane poprzez użycie farb dodatkowych (np. z palety PANTONE).</p>
+  <p class="wstep3">Przygotowując pliki do wykorzystania w Internecie, najlepiej używać profilu kolorów sRGB, który, będąc swego rodzaju standardem, obsługiwany jest przez praktycznie każdą aplikację. Więcej na temat przygotowania i optymalizacji plików rastrowych do publikacji w sieci można przeczytać w naszym bliźniaczym artykule: Zdjęcia i ilustracje w Internecie.</p>
+  <img  src="https://www.whitepress.pl/userfiles/_CMS_/konwersja-z-rgb-do-cmyk.jpg" alt="Responive image"> 
+  <p>Wizualizacja tego jak poczególne kolory z ekranu będą wyglądały po wydrukowaniu.</p>
+  <div class="prawy">&nbsp </div>
+</div>
+  <footer class="stopka">Stronę wykonał Łukasz Dziadosz</footer>
+<script src="skrypt.js"></script>
+</body>
+</html>

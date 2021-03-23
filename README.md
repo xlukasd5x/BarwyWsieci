@@ -1,3 +1,3 @@
 # BarwyWsieci
 
-Projekt na studia (2 semestr)
+Projekt na studia (3 semestr)
